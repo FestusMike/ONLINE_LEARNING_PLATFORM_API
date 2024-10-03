@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    
+<p>Hi {{name}},</p>
+    
+    {% if user.is_student %}
+    
+    <p>Thank you for registering with Longman Academy!</p>
+    
+    {% else %}
+
+    <p>Thank you for registering your interest as a tutor with Longman Academy!</p>
+
+    {% endif %}
+    
+    <p>To verify your email address and activate your account, please enter the following OTP: <strong>{{otp}}</strong></p>
+    
+    <p> This OTP expires after 5 minutes. </p>
+    
+{% endblock %}

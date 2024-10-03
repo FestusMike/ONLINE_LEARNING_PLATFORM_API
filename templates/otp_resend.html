@@ -1,0 +1,13 @@
+{% extends 'main.html' %}
+
+{% block content %}
+    
+<p>Hi {{name}},</p>
+
+    <p>You requested this email because the OTP earlier assigned to you has expired.</p>
+
+    <p>To verify that it's you, please enter the following OTP: <strong>{{otp}}</strong></p>
+    
+    <p> The OTP expires after 5 minutes. </p>
+
+{% endblock %}

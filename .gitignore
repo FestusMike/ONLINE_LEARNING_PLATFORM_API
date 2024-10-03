@@ -1,0 +1,5 @@
+.env
+jwt_private_key.pem
+jwt_public_key.pem
+*/__pycache__/*
+*/migrations/*
